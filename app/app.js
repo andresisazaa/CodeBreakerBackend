@@ -21,4 +21,16 @@ app.get('/guess/:number', function (req, res) {
     });
 });
 
+app.get('/upgrade', function (req, res) {
+    res.send({
+        result: 'Holi upgrade'
+    });
+});
+
+app.get('/anything', function (req, res) {
+    res.send({
+        result: 'Holi anything'
+    });
+});
+
 module.exports = app;
